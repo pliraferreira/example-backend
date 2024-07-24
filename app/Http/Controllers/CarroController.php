@@ -38,6 +38,7 @@ class CarroController extends Controller
      */
     public function update(UpdateCarroRequest $request, int $id)
     {
+        // * não possui
         return Carro::findOrFail($id)->update($request->validated());
     }
 
